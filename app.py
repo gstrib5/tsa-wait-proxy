@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-TSA_BASE_URL = "https://apps.tsa.dhs.gov/MyTSAWebService/GetTSOWaitTimes.ashx"
+TSA_BASE_URL = "http://apps.tsa.dhs.gov/MyTSAWebService/GetTSOWaitTimes.ashx"
 
 
 def map_tsa_wait_code(code):
